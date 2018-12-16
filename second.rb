@@ -12,7 +12,7 @@ if File.exist? File.expand_path(dir)
     f_in.each do |line|
       line.delete!("\n")
       sum_len += line.length
-      file_out.puts('Длина строки ' + (line.length).to_s + ' символов')
+      file_out.puts("Длина строки #{line.length} символов")
       file_out.puts(line)
     end
     file_out.puts('Общее количество символов - ' + sum_len.to_s)
